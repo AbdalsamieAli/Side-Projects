@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Symmetrical Components</title>
+  <style></style>
+  <link rel='stylesheet' href='symm_comp.css'>
+  
+</head>
+<body>
+  <h2>Symmetrical Components Calculator</h2>
+
+  <!-- System  -->
+  <div class="canvas-wrapper">
+    <div class="controls">
+		<label>IA Magnitude: <input id="magIa" type="number" value="165" step="1"></label>
+		<label>IA Angle (°): <input id="angleIa" type="number" value="46.8" step="0.1"></label>
+		<div>
+			<label>IB Magnitude: <input id="magIb" type="number" value="132" step="1"></label>
+			<label>IB Angle (°): <input id="angleIb" type="number" value="-67" step="0.1"></label>
+		</div>
+        <div>
+			<label>IC Magnitude: <input id="magIc" type="number" value="156" step="1"></label>
+			<label>IC Angle (°): <input id="angleIc" type="number" value="-121" step="0.1"></label>
+        </div>
+        <button class="btn" id="drawBtn">Calc</button>
+    </div>
+	<br>
+    <canvas id="canvas1" width="500" height="500"></canvas>
+  </div>
+	<br>
+  <!-- Zero sequence -->
+  <div class="canvas-wrapper">
+  <h3>Zero sequence </h3>
+    <canvas id="canvas2" width="500" height="500"></canvas>
+  </div>
+
+  <!-- Postive sequence -->
+  <div class="canvas-wrapper">
+  <h3>Postive sequence </h3>
+    <canvas id="canvas3" width="500" height="500"></canvas>
+  </div>
+
+  <!-- Negative sequence -->
+  <div class="canvas-wrapper">
+    <h3>Negative sequence </h3>
+	<canvas id="canvas4" width="500" height="500"></canvas>
+  </div>
+
+  <script src='symm_comp.js'>
+  </script>
+</body>
+</html>
